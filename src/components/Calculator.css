@@ -1,0 +1,82 @@
+.calculator {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.button {
+  flex: 1; /* Equal-sized buttons */
+  margin: 5px;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05); /*Zoom on hover */
+}
+
+.button:active {
+  background-color: #ccc;
+}
+
+.button.operator {
+  background-color: #f8d7da;
+}
+
+.button.operator:hover {
+  background-color: #f5c6cb;
+}
+
+.button.equal {
+  background-color: #c3e6cb;
+}
+
+.button.equal:hover {
+  background-color: #b1dfbb;
+}
+
+.input {
+  width: 100%; /* Use full width to avoid any calculation issues */
+  height: 60px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: right;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; 
+  margin-left: 0; 
+  margin-right: 0; 
+}
+
+
+.text-center {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
