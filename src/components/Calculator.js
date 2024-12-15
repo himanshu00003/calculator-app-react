@@ -21,7 +21,6 @@ const Calculator = () => {
     return ["+", "-", "*", "/", "%"].includes(inputString);
   }
 
-
   const handleClick = (value) => {
     if (value === "MR") {
       setMemoryRecording(true);
